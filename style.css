@@ -1,0 +1,337 @@
+/*
+style.css
+---------
+ 
+Par Charly MUZIOTTI
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@290;351;402&display=swap');
+
+body
+     {
+        font-family: 'Raleway', sans-serif, font-awesome;
+    }
+ 
+p
+{
+    color: black; /* Les paragraphes seront en noir */
+}
+div
+{
+	border: 1px blue dashed;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+img {
+    padding: 10px;
+}
+#menu-nav {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    flex-direction: row;
+}
+nav.navigation_enfant {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+a.nav {
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: bold;
+    padding: 25px;
+}
+a.nav:hover {
+    text-decoration: overline;
+    border-top: solid;
+}
+
+a {
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* SEARCH */
+
+    /* SEARCH FORM */
+form {
+    margin: 1%;
+    display: flex;
+}
+span.icone_search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2%;
+    background-color: #F2F2F2;
+    height: 47%;
+    border-radius: 5px 0px 0px 5px;
+    border: solid;
+    border-width: thin;
+    border-right: none;
+}
+.search_form {
+    display: flex;
+    align-items: center;
+    width: 1500px;
+    height: 60px;
+}
+input#Rechercher {
+    width: 10%;
+    height: 50%;
+    border-left: none;
+    border-right: none;
+    border-width: thin;
+}
+.txtfiltre {
+    width: 5%;
+    font-weight: bold;
+}
+label {
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 0px 5px 5px 0px;
+    width: 7%;
+    height: 50%;
+    align-items: center;
+    font-weight: bold;
+}
+.boutonsfiltre {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.boutons_filtres_parent {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+    justify-content: spa;
+    width: 75%;
+}
+
+input[type="button"] {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+i#icone_bouton {
+    color: #0065FC;
+}
+
+.boutons_filtre_enfant {
+    border: solid;
+    border: 3%;
+    border-width: 3px;
+    border-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+/* ACCROCHE */
+
+.nbre_logments {
+    display: flex;
+    align-items: center;
+}
+.accroche {
+    margin-block: 1%;
+}
+
+/* FILTERS */
+
+.filtres {
+    margin-block: 2%;
+}
+
+/* HOSTING */
+
+section#hosting {
+    padding-block: 2%;
+    margin-block: 2%;
+}
+
+    /* HEBERGEMENTS MARSEILLE */
+.hebergementmarseille {
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.img_article {
+    width: 100%;
+    height: 50%;
+}
+
+article.hostingarticle {
+    width: 20%;
+    height: 30%;
+}
+
+.listehotels {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    align-content: space-around;
+}
+img.imghosting {
+    width: 100%;
+    height: 100%;
+}
+section#hosting {
+    display: flex;
+    justify-content: space-around;
+}
+.listehotels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+    /* POPULAR */
+
+aside.hostingpopular {
+    width: 35%;
+    height: auto;
+    max-height: 600px;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 10px;
+}
+.accroche_popular {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    /* width: 90%; */
+    /* align-content: end; */
+}
+.img_popular {
+    width: 60%;
+    height: auto;
+}
+
+article.hostingpopular {
+    width: 70%;
+    height: 20%;
+    display: flex;
+}
+img.imgpopularimg {
+    width: 100%;
+    height: 100%;
+}
+
+.listepopular {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS ETOILES NOTATION
+/* Par défaut, une étoile est en gris,
+   avec un padding et un curseur en forme de main. */
+.fa-star {
+	color: gray;
+	cursor: pointer;
+	padding: 0.0625rem;
+}
+/* Si elle porte en plus la classe '.blue', elle sera en bleu. */
+.fa-star.blue {
+	color: #0065FC;
+}
+/* Le parent global '.rating' positionne le groupe des étoiles et le lien en colonne */
+.rating {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+	/* Le groupe '.stars' positionne les étoiles
+		 les unes à côté des autres sans espacements. */
+	.stars {
+		display: flex;
+}
+
+	/* A l'état :hover sur le parent '.rating',
+		 on force TOUTES les étoiles à passer en bleu. */
+	.stars:hover .fa-star {
+		color: #0065FC;
+	}
+	/* Et si la souris survole une étoile en particulier,
+		 on sélectionne toutes les étoiles qui sont APRÈS celle-ci
+		 grâce à l'opérateur '~' et on les force en GRIS */
+	.stars .fa-star:hover ~ .fa-star {
+		color: gray;
+	}
+	.stars{
+    width: auto;
+    height: auto;
+}
+
+/* ACTIVITIES */
+
+.img_activities_gd {
+    width: 100%;
+    height: 100%;
+}
+
+article.activityarticle_gd {
+    width: 80%;
+    height: 20%;
+}
+
+.liste_activities {
+    height: auto;
+    width: 100%;
+    max-height: 600px;
+    align-content: space-around;
+}
+
+img.img_activitiesimg {
+    width: 100%;
+    height: 100%;
+}
+
+.activities {
+    margin-block: 2%;
+}
+
+.liste_activities {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    padding-top: 2%;
+    background-color: #F2F2F2;
+}
+.footer_parent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-content: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+/* FOOTER */
