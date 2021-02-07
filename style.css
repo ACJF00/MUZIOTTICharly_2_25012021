@@ -487,7 +487,6 @@ div.listehotels
 div.hebergementmarseille
 {
     flex-direction: column;
-    height: 3000px;
     width: 90%;
     margin: auto;
     order: 2;
