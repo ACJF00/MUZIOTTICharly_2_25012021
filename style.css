@@ -5,7 +5,7 @@ style.css
 Par Charly MUZIOTTI
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@290;351;402&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@290;351;402;500;600;700&display=swap');
 
 body
      {
@@ -42,19 +42,18 @@ nav.navigation_enfant {
 }
 a.nav {
     text-decoration: none;
-    color: #0065FC;
     font-weight: bold;
     padding: 25px;
 }
 a.nav:hover {
-    text-decoration: overline;
     border-top: solid;
+    color: #0065fc;
+    font-weight: bold;
 }
 
 a {
     color: black;
     font-size: small;
-    font-weight: bold;
     text-decoration: none;
 }
 /* SEARCH */
@@ -80,7 +79,7 @@ span.icone_search {
 .search_form {
     display: flex;
     align-items: center;
-    width: 1500px;
+    width: 100%;
     height: 60px;
 }
 input#Rechercher {
@@ -97,7 +96,7 @@ input#Rechercher {
     font-weight: bold;
 }
 label {
-    background-color: blue;
+    background-color: #0065FC;
     color: white;
     display: flex;
     justify-content: center;
@@ -130,6 +129,9 @@ label {
 span {
     width: 85%;
     text-align: center;
+}
+span.sousaccroche {
+    font-size: smaller;
 }
 i#icone_bouton {
     color: #0065FC;
@@ -166,8 +168,11 @@ i#icone_bouton {
 .nbre_logments {
     display: flex;
     align-items: center;
-    width: 33%;
+    width: 30%;
     justify-content: space-around;
+}
+p#nbre_logement {
+    font-size: smaller;
 }
 i.fas.fa-info-circle {
     color: #0065FC;
@@ -190,6 +195,9 @@ section#hosting {
 }
 
     /* HEBERGEMENTS MARSEILLE */
+p.price_hosting {
+        font-size: small;
+}
 .hebergementmarseille {
     background-color: #F2F2F2;
     padding: 10px;
@@ -264,6 +272,7 @@ aside.hostingpopular {
     width: 58%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 article.hostingpopular {
@@ -411,3 +420,142 @@ ul {
     padding: 0;
 }
 /* FOOTER */
+
+
+
+/* VERSION IPHONE */
+
+@media all and (max-device-width: 480px)
+{
+html 
+{
+    width: fit-content;
+}
+div.header
+{
+    width: 100%;
+}
+
+
+div.filtres
+    {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        flex-direction: column;
+    }
+div.boutons_filtres_parent
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+div.boutons_filtre_enfant 
+    {
+width: auto;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-around;
+    }
+div.search_form
+{
+    width: 100%;
+}
+div.accroche
+{
+    width: 100%;
+}
+h2
+{
+    font-size: 60px;
+}
+section#hosting
+{
+    flex-direction: column;
+}
+div.listehotels
+{
+    flex-direction: row;
+    height: 100%;
+    max-height: fit-content;
+}
+div.hebergementmarseille
+{
+    flex-direction: column;
+    height: 3000px;
+    width: 90%;
+    margin: auto;
+    order: 2;
+    background-color: white;
+}
+article.hostingarticle
+{
+    width: 100%;
+    height: auto;
+}
+div.img_article
+{
+    width: 100%;
+    height: 250px;
+    background: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+p.title_hosting
+{
+    font-size: 50px;
+}
+div.txt_article
+{
+    height: 60%;
+}
+aside.hostingpopular
+{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+}
+article.hostingpopular
+{
+width: 100%;
+height: auto;
+}
+div.img_popular
+{
+    width: 45%;
+    height: auto;
+    background-position: center;
+}
+div.txt_popular
+{
+    width: 50%;
+}
+p.price_hosting
+{
+    font-size: 25px;
+}
+div.stars
+{
+    size: 1em;
+}
+div.info_popular
+{
+    width: auto;
+    height: 90%;
+    ;
+}
+div.nbre_logments
+{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    font-size: xxx-large;
+}
+div.activities
+{
+    flex-direction: column;
+}
+}

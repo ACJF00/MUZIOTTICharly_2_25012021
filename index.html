@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <script src="https://kit.fontawesome.com/84f87a4f79.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reservia</title>
     </head>
 
@@ -83,7 +84,7 @@
         </div>
         <div class="nbre_logments">
             <i class="fas fa-info-circle"></i>
-            <p>   Plus de 500 logement sont disponibles dans cette ville</p>
+            <p id="nbre_logement">Plus de 500 logement sont disponibles dans cette ville</p>
         </div>
     </section>
 <!-- SEARCH -->
@@ -93,11 +94,11 @@
         <div class="hebergementmarseille">
                 <h2>Hebergement à Marseille</h2>
             <div class="listehotels">
-                <article class="hostingarticle">
+                <article class="hostingarticle" id="article1">
 					<div class="img_article" style="background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);"></div>
 	 				<div class="txt_article">                     
-                        <p>Auberge la Canebière</p>
-                        <p>Nuit à partir de <strong>25€</strong></p>
+                        <p class="title_hosting">Auberge la Cannebière</p>
+                        <p class="price_hosting">Nuit à partir de <strong>25€</strong></p>
                         <div class="stars">
                                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                                 <i class="fa fa-star blue"></i>
@@ -108,11 +109,11 @@
                         </div>
 					</div>  
                 </article>
-                <article class="hostingarticle">
+                <article class="hostingarticle" id="article2">
                     <div class="img_article" style="background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);"></div>
                     <div class="txt_article">
-						<p>Hôtel du Port</p>
-                        <p>Nuit à partir de <strong>52€</strong></p>
+						<p class="title_hosting">Hôtel du Port</p>
+                        <p class="price_hosting">Nuit à partir de <strong>52€</strong></p>
                         <div class="stars">
                                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                                 <i class="fa fa-star blue"></i>
@@ -123,11 +124,11 @@
                         </div>
                     </div>
                 </article>
-                <article class="hostingarticle">
+                <article class="hostingarticle" id="article3">
                     <div class="img_article" style="background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);"></div>
                     <div class="txt_article">
-                        <p>Hôtel Les Mouettes</p>
-                        <p>Nuit à partir de <strong>76€</strong></p>
+                        <p class="title_hosting">Hôtel Les Mouettes</p>
+                        <p class="price_hosting">Nuit à partir de <strong>76€</strong></p>
                         <div class="stars">
                                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                                 <i class="fa fa-star blue"></i>
@@ -138,11 +139,11 @@
                         </div>
                     </div>
                 </article>
-                <article class="hostingarticle">
+                <article class="hostingarticle" id="article4">
                     <div class="img_article" style="background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);"></div>
 					<div class="txt_article">
-                        <p>Hôtel de la Mer</p>
-                        <p>Nuit à partir de <strong>46€</strong></p>
+                        <p class="title_hosting">Hôtel de la Mer</p>
+                        <p class="price_hosting">Nuit à partir de <strong>46€</strong></p>
                         <div class="stars">
                                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                                 <i class="fa fa-star blue"></i>
@@ -153,11 +154,11 @@
                         </div>
                     </div>
                 </article>
-                <article class="hostingarticle">
+                <article class="hostingarticle" id="article5">
                     <div class="img_article" style="background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);"></div>
                     <div class="txt_article">
-                        <p>Auberge le Panier</p>
-                        <p>Nuit à partir de <strong>23€</strong></p>
+                        <p class="title_hosting">Auberge le Panier</p>
+                        <p class="price_hosting">Nuit à partir de <strong>23€</strong></p>
                         <div class="stars">
                             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                             <i class="fa fa-star blue"></i>
@@ -168,11 +169,11 @@
                         </div>
                     </div>
                 </article>
-                <article class="hostingarticle">
+                <article class="hostingarticle" id="article6">
                     <div class="img_article" style="background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);"></div>
                     <div class="txt_article">
-                        <p>Hôtel chez Amina</p>
-                    	<p>Nuit à partir de <strong>96€</strong></p>
+                        <p class="title_hosting">Hôtel chez Amina</p>
+                    	<p class="price_hosting">Nuit à partir de <strong>96€</strong></p>
                         <div class="stars">
                             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                             <i class="fa fa-star blue"></i>
@@ -186,6 +187,7 @@
             </div>
             <a href="#" class="afficher_plus">Afficher plus</a>
         </div>
+<!-- ASIDE POPULAR -->
         <aside class="hostingpopular">
             <div class="accroche_popular">
                 <h2>Les plus populaires</h2>
@@ -195,8 +197,10 @@
                  <article class="hostingpopular">
                     <div class="img_popular" style="background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);"></div>
                     <div class="txt_popular">
-                        <p>Hôtel Le Soleil du Matin</p>
-                        <p>Nuit à partir de 128€</p>
+                        <div class="info_popular">
+                        <p class="title_hosting">Hôtel Le Soleil du Matin</p>
+                        <p class="price_hosting">Nuit à partir de <strong>128€</strong></p>
+                        </div>
                         <div class="stars">
                             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                             <i class="fa fa-star blue"></i>
@@ -210,8 +214,10 @@
                  <article class="hostingpopular">
                     <div class="img_popular" style="background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);"></div>
                     <div class="txt_popular">
-                        <p>Au Coeur de l'eau Chambres d'hôtes</p>
-                        <p>Nuit à partir de 71€</p>
+                        <div class="info_popular">
+                        <p class="title_hosting">Au Coeur de l'eau Chambres d'hôtes</p>
+                        <p class="price_hosting">Nuit à partir de <strong>71€</strong></p>
+                        </div>
                             <div class="stars">
                                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                                 <i class="fa fa-star blue"></i>
@@ -225,8 +231,10 @@
                  <article class="hostingpopular">
                     <div class="img_popular" style="background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);"></div>
                     <div class="txt_popular">
-                        <p>Hôtel Tout Bleu et Blanc</p>
-                        <p>Nuit à partir de 68€</p>
+                        <div class="info_popular">
+                        <p class="title_hosting">Hôtel Tout Bleu et Blanc</p>
+                        <p class="price_hosting">Nuit à partir de <strong>68€</strong></p>
+                        </div>
                             <div class="stars">
                                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
                                 <i class="fa fa-star blue"></i>
@@ -238,7 +246,8 @@
                     </div>      
                   </article>
               </div>          
-        </aside>    
+        </aside>   
+<!-- ASIDE POPULAR --> 
 </section>
 <!-- HEBERGEMENT -->
 
