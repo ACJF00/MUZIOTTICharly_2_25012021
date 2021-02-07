@@ -129,6 +129,9 @@ label {
 span {
     width: 85%;
     text-align: center;
+    white-space: nowrap;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 span.sousaccroche {
     font-size: smaller;
@@ -143,6 +146,7 @@ i#icone_bouton {
     border-width: 3px;
     border-color: #F2F2F2;
     border-radius: 20px;
+    min-width: fit-content;
 }
 .boutons_filtre_enfant {
     display: flex;
@@ -161,6 +165,8 @@ i#icone_bouton {
     justify-content: center;
     margin: -3px;
     background: aliceblue;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 /* ACCROCHE */
@@ -212,11 +218,11 @@ p.price_hosting {
     height: 120px;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
-    background: round;
+    background-position: center;
 }
 article.hostingarticle {
-    width: 20%;
-    height: 30%;
+    width: 25%;
+    height: 20%;
     margin: 10px;
     border-radius: 10px;
     background-color: white;
@@ -267,6 +273,7 @@ aside.hostingpopular {
     height: auto;
     background-size: cover;
     border-radius: 10px 0px 0px 10px;
+    background-position: center;
 }
 .txt_popular {
     width: 58%;
@@ -353,6 +360,7 @@ article.activityarticle_gd {
     padding: 10px;
     box-shadow: 1px 3px 3px grey;
     border-radius: 10px;
+    background-position: center;
 }
 
 .liste_activities {
@@ -435,8 +443,6 @@ div.header
 {
     width: 100%;
 }
-
-
 div.filtres
     {
         display: flex;
@@ -552,7 +558,8 @@ div.nbre_logments
     width: 100%;
     width: 100%;
     display: flex;
-    font-size: xxx-large;
+    font-size: 2em;
+    justify-content: space-around;
 }
 div.activities
 {
