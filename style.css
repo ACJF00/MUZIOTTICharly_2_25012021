@@ -174,7 +174,7 @@ i#icone_bouton {
     justify-content: space-around;
 }
 p#nbre_logement {
-    font-size: smaller;
+    font-size: 1em;
 }
 i.fas.fa-info-circle {
     color: #0065FC;
@@ -437,7 +437,30 @@ html
 }
 div.header
 {
-    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div#logo_reservia
+{
+    width: 50%;
+}
+div#menu-nav
+{
+        width: auto;
+        flex-direction: column-reverse;
+}
+nav.navigation_enfant
+{
+    justify-content: center;
+    margin-left: -180px;
+}
+div.inscription_enfant
+{
+    margin-left: 120px;
+}
+a.nav 
+{
+    float: left;
 }
 div.filtres
     {
@@ -470,10 +493,11 @@ div.accroche
 {
     width: 100%;
 }
-h2
+p#nbre_logement
 {
-    font-size: 60px;
+    font-size: 0.5em;
 }
+
 section#hosting
 {
     flex-direction: column;
