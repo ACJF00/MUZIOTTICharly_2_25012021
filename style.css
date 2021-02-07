@@ -16,10 +16,6 @@ p
 {
     color: black; /* Les paragraphes seront en noir */
 }
-div
-{
-	border: 1px blue dashed;
-}
 
 /* HEADER */
 .header {
