@@ -79,7 +79,6 @@ span.icone_search {
     height: 60px;
 }
 input#Rechercher {
-    width: 10%;
     height: 50%;
     border: solid;
     border-left: none;
@@ -97,7 +96,6 @@ label {
     display: flex;
     justify-content: center;
     border-radius: 0px 5px 5px 0px;
-    width: 7%;
     height: 50%;
     align-items: center;
     font-weight: bold;
@@ -464,30 +462,25 @@ a.nav
 }
 div.filtres
     {
-        display: flex;
-        flex-wrap: wrap;
         width: 100%;
         flex-direction: column;
+        margin-left: -15px;
     }
 div.boutons_filtres_parent
 {
-    display: flex;
     flex-wrap: wrap;
-    width: 100%;
     height: auto;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 div.boutons_filtre_enfant 
     {
-width: auto;
-display: flex;
-flex-wrap: wrap;
-flex-direction: column;
+flex-direction: row;
 justify-content: space-around;
     }
 div.search_form
 {
-    width: 100%;
+    width: 88%;
 }
 div.accroche
 {
@@ -510,11 +503,9 @@ div.listehotels
 }
 div.hebergementmarseille
 {
-    flex-direction: column;
-    width: 90%;
-    margin: auto;
     order: 2;
     background-color: white;
+    margin-left: initial;
 }
 article.hostingarticle
 {
@@ -531,7 +522,7 @@ div.img_article
 }
 p.title_hosting
 {
-    font-size: 50px;
+    font-size: 22px;
 }
 div.txt_article
 {
@@ -540,8 +531,9 @@ div.txt_article
 aside.hostingpopular
 {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
+    margin-left: 4px;
 }
 article.hostingpopular
 {
@@ -560,7 +552,7 @@ div.txt_popular
 }
 p.price_hosting
 {
-    font-size: 25px;
+    font-size: 18px;
 }
 div.stars
 {
