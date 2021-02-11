@@ -7,6 +7,12 @@ Par Charly MUZIOTTI
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@290;351;402;500;600;700&display=swap');
 
+div
+{
+    border: #0065fc;
+    border-style: dotted;
+}
+
 body
      {
         font-family: 'Raleway', sans-serif, font-awesome;
@@ -18,9 +24,15 @@ p
 }
 
 /* HEADER */
-.header {
+
+header
+{
+    width: 100%;
+}
+div.header {
     display: flex;
     justify-content: space-between;
+    width: 80%
 }
 img {
     padding: 10px;
@@ -195,7 +207,11 @@ section#hosting {
 }
 
     /* HEBERGEMENTS MARSEILLE */
-p.price_hosting {
+h2#hosting_mrs 
+{
+    width: 40%;
+}
+    p.price_hosting {
         font-size: small;
 }
 .hebergementmarseille {
@@ -421,6 +437,15 @@ ul {
     margin: 0;
     padding: 0;
 }
+.apropos {
+    width: 33%;
+}
+.ourhosting {
+    width: 33%;
+}
+.assist {
+    width: 33%;
+}
 /* FOOTER */
 
 
@@ -429,10 +454,6 @@ ul {
 
 @media all and (max-device-width: 480px)
 {
-html 
-{
-    width: fit-content;
-}
 div.header
 {
     flex-direction: row;
@@ -444,28 +465,41 @@ div#logo_reservia
 }
 div#menu-nav
 {
-        width: auto;
+        width: inherit;
         flex-direction: column-reverse;
 }
 nav.navigation_enfant
 {
     justify-content: center;
-    margin-left: -180px;
+    margin-left: -115px;
 }
 div.inscription_enfant
 {
-    margin-left: 120px;
+    margin-left: 105px;
+    font-size: 0.8em;
 }
 a.nav 
 {
     float: left;
+    font-size: 1.2em;
+}
+section#search
+{
+    width: 100%;
 }
 div.filtres
     {
         width: 100%;
         flex-direction: column;
-        margin-left: -15px;
     }
+.txtfiltre
+{
+    width: 100%;
+}
+.boutons_filtres_parent
+{
+    width: 100%;
+}
 div.boutons_filtres_parent
 {
     flex-wrap: wrap;
@@ -480,7 +514,8 @@ justify-content: space-around;
     }
 div.search_form
 {
-    width: 88%;
+    width: 100%;
+    justify-content: center;
 }
 div.accroche
 {
@@ -494,18 +529,25 @@ p#nbre_logement
 section#hosting
 {
     flex-direction: column;
+    width: 100%;
 }
 div.listehotels
 {
-    flex-direction: row;
-    height: 100%;
+    flex-direction: column;
     max-height: fit-content;
+    width: 95%;
 }
 div.hebergementmarseille
 {
     order: 2;
     background-color: white;
-    margin-left: initial;
+    margin: auto;
+    width: 100%;
+    padding: unset;
+}
+h2#hosting_mrs
+{
+    width: 100%;
 }
 article.hostingarticle
 {
@@ -528,12 +570,16 @@ div.txt_article
 {
     height: 60%;
 }
+a.afficher_plus
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
 aside.hostingpopular
 {
     flex-direction: column;
-    width: 80%;
-    margin-bottom: 20px;
-    margin-left: 4px;
+    width: 100%;
+    padding: unset;
 }
 article.hostingpopular
 {
@@ -575,5 +621,44 @@ div.nbre_logments
 div.activities
 {
     flex-direction: column;
+}
+article.activityarticle_gd
+{
+    width: 95%;
+    padding: unset;
+    margin: auto;
+}
+article.activityarticle
+{
+    width: 95%;
+    padding: unset;
+}
+div.activity_small
+{
+    width: 100%;
+}
+div.liste_activities
+{
+    width: 100%;
+    flex-direction: column;
+    max-height: none;
+}
+div.img_activities_gd
+{
+    width: 100%;
+    height: 250px;
+}
+.img_activities
+{
+    width: 100%;
+    height: 250px;
+}
+footer
+{
+    width: 100%;
+}
+.footer_parent
+{
+    width: 100%;
 }
 }
