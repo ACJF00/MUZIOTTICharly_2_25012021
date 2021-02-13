@@ -94,6 +94,9 @@ input#Rechercher {
     border-width: thin;
     border-color: #F2F2F2;
 }
+i.fas.fa-search {
+    display: none;
+}
 .txtfiltre {
     width: 5%;
     font-weight: bold;
@@ -107,6 +110,8 @@ label {
     height: 50%;
     align-items: center;
     font-weight: bold;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 .boutonsfiltre {
     display: flex;
@@ -480,6 +485,11 @@ a.nav
     font-size: 1.2em;
     color: #0065FC;
 }
+a.nav:hover {
+    border-bottom: solid;
+    color: #0065fc;
+    font-weight: bold;
+}
 section#search
 {
     width: 100%;
@@ -506,13 +516,58 @@ div.boutons_filtres_parent
 }
 div.boutons_filtre_enfant 
     {
-flex-direction: row;
-justify-content: space-around;
+        font-size: 1.1em;
+        font-weight: 600;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 80px;
     }
+.icone
+{
+    padding: 11px;
+    margin-left: -15px;
+    margin-top: -13px;
+    margin-bottom: -13px;
+}
+span.texte_bouton
+{
+    margin-left: 5px;
+}
+label
+{
+    display: none;
+}
 div.search_form
 {
     width: 100%;
+    margin-left: 15px;
+}
+input#Rechercher
+{
+    width: 280px;
+    height: 75%;
+}
+i.fas.fa-search
+{
+    display: inline;
+    border: solid;
+    border-left: none;
+    border-radius: 5px 5px 5px 5px;
+    border-color: #F2F2F2;
+    border-width: thin;
+    background-color: #0065FC;
+    padding: 6px;
+    color: white;
+    height: 55%;
+    width: 10%;
+    display: flex;
     justify-content: center;
+    align-items: center;
+}
+span.icone_search
+{
+    width: 10%;
+    height: 75%;
 }
 div.accroche
 {
@@ -560,7 +615,7 @@ div.img_article
 }
 p.title_hosting
 {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 div.txt_article
 {
@@ -585,14 +640,13 @@ aside.hostingpopular
 }
 article.hostingpopular
 {
-width: 100%;
+width: 95%;
 height: auto;
 }
 div.img_popular
 {
-    width: 45%;
-    height: auto;
-    background-position: center;
+    width: 150px;
+    height: 140px;
 }
 div.txt_popular
 {
@@ -610,9 +664,7 @@ div.stars
 }
 div.info_popular
 {
-    width: auto;
-    height: 90%;
-    ;
+    height: 100px;
 }
 div.nbre_logments
 {
@@ -630,11 +682,14 @@ div.activities
 }
 p.txt_activity_enfant
 {
-    font-size: 1.4em;
+    font-size: 1em;
 }
 article.activityarticle_gd
 {
     width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 4px;
 }
 article.activityarticle
 {
@@ -644,7 +699,6 @@ article.activityarticle
 div.activity_small
 {
     width: 100%;
-    margin: inherit;
 }
 div.liste_activities
 {
