@@ -546,7 +546,6 @@ div.hebergementmarseille
     background-color: white;
     margin: auto;
     width: 100%;
-    padding: unset;
 }
 h2#hosting_mrs
 {
@@ -582,7 +581,13 @@ aside.hostingpopular
 {
     flex-direction: column;
     width: 100%;
-    padding: unset;
+    margin-left: -7px;
+    border-radius: unset;
+    padding: 14px;
+}
+.listepopular
+{
+    width: 100%;
 }
 article.hostingpopular
 {
@@ -607,6 +612,7 @@ p.price_hosting
 div.stars
 {
     size: 1em;
+    margin-left: 9px;
 }
 div.info_popular
 {
@@ -625,6 +631,8 @@ div.nbre_logments
 div.activities
 {
     flex-direction: column;
+    margin-left: 4px;
+    width: 95%;
 }
 p.txt_activity_enfant
 {
@@ -632,18 +640,17 @@ p.txt_activity_enfant
 }
 article.activityarticle_gd
 {
-    width: 95%;
-    padding: unset;
-    margin: auto;
+    width: 100%;
 }
 article.activityarticle
 {
-    width: 95%;
-    padding: unset;
+    width: 100%;
+    margin-left: 4px;
 }
 div.activity_small
 {
     width: 100%;
+    margin: inherit;
 }
 div.liste_activities
 {
@@ -655,16 +662,20 @@ div.liste_activities
 div.img_activities_gd
 {
     width: 100%;
-    height: 250px;
+    height: 135px;
 }
 .img_activities
 {
     width: 100%;
-    height: 250px;
+    height: 135px;
 }
 footer
 {
-    width: 100%;
+    width: 375px;
+    margin: -7px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    padding: 14px;
 }
 .footer_parent
 {
@@ -674,17 +685,16 @@ footer
 .apropos
 {
     width: 100%;
+    margin-left: 6px;
 }
 .ourhosting
 {
     width: 100%;
+    margin-left: 6px;
 }
 .assist
 {
     width: 100%;
+    margin-left: 6px;
 }
 }
-
-
-
-TEST
