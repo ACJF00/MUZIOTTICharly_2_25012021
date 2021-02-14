@@ -143,8 +143,8 @@ span {
 span.sousaccroche {
     font-size: smaller;
 }
-i#icone_bouton {
-    color: #0065FC;
+.icone i {
+    color: 0065FC;
 }
 
 .boutons_filtre_enfant {
@@ -457,27 +457,29 @@ ul {
 {
 div.header
 {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 div#logo_reservia
 {
     width: 50%;
+    height: 0;
 }
 div#menu-nav
 {
-        width: inherit;
+        width: 100%;
         flex-direction: column-reverse;
 }
 nav.navigation_enfant
 {
     justify-content: center;
-    margin-left: -115px;
 }
 div.inscription_enfant
 {
-    margin-left: 105px;
     font-size: 0.8em;
+    justify-content: flex-end;
+    width: 100%;
+    display: flex;
 }
 a.nav 
 {
@@ -485,10 +487,12 @@ a.nav
     font-size: 1.2em;
     color: #0065FC;
 }
-a.nav:hover {
+a.nav:hover 
+{
     border-bottom: solid;
     color: #0065fc;
     font-weight: bold;
+    border-top: none;
 }
 section#search
 {
@@ -506,15 +510,11 @@ div.filtres
 .boutons_filtres_parent
 {
     width: 100%;
-}
-div.boutons_filtres_parent
-{
     flex-wrap: wrap;
     height: auto;
-    flex-direction: row;
     justify-content: flex-start;
 }
-div.boutons_filtre_enfant 
+.boutons_filtre_enfant 
     {
         font-size: 1.1em;
         font-weight: 600;
@@ -540,7 +540,6 @@ label
 div.search_form
 {
     width: 100%;
-    margin-left: 6px;
 }
 input#Rechercher
 {
@@ -580,7 +579,6 @@ p#nbre_logement
 {
     font-size: 0.5em;
 }
-
 section#hosting
 {
     flex-direction: column;
@@ -635,7 +633,7 @@ aside.hostingpopular
     width: 100%;
     margin-left: -7px;
     border-radius: unset;
-    padding: 14px;
+    padding: 17px;
 }
 .listepopular
 {
@@ -672,10 +670,7 @@ div.info_popular
 div.nbre_logments
 {
     width: 100%;
-    width: 100%;
-    display: flex;
     font-size: 2em;
-    justify-content: space-around;
 }
 div.activities
 {
@@ -726,7 +721,7 @@ footer
     margin: -7px;
     margin-top: 20px;
     padding-bottom: 30px;
-    padding: 14px;
+    padding: 8px;
 }
 .footer_parent
 {
