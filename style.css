@@ -540,12 +540,15 @@ label
 div.search_form
 {
     width: 100%;
-    margin-left: 15px;
+    margin-left: 6px;
 }
 input#Rechercher
 {
     width: 280px;
     height: 75%;
+    padding-left: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 i.fas.fa-search
 {
@@ -593,8 +596,8 @@ div.hebergementmarseille
 {
     order: 2;
     background-color: white;
-    margin: auto;
     width: 100%;
+    margin-left: 7px;
 }
 h2#hosting_mrs
 {
