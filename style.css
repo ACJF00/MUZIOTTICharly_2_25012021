@@ -143,10 +143,6 @@ span {
 span.sousaccroche {
     font-size: smaller;
 }
-.icone i {
-    color: 0065FC;
-}
-
 .boutons_filtre_enfant {
     border: solid;
     border: 3%;
@@ -174,6 +170,9 @@ span.sousaccroche {
     background: aliceblue;
     padding-right: 5px;
     padding-left: 5px;
+}
+.icone i {
+    color: #0065FC;
 }
 
 /* ACCROCHE */
@@ -450,6 +449,65 @@ ul {
 /* FOOTER */
 
 
+
+/* VERSION TABLETTE */
+
+@media all and (min-width: 480px) and (max-device-width: 1024px)
+{
+.header
+{
+    width: 80%;
+}
+nav.navigation_enfant
+{
+    width: unset;
+}
+a.nav
+{
+    font-size: 1.2em;
+}
+.accroche
+{
+    font-size: 1.5em;
+}
+.search_form
+{
+    width: 100%;
+}
+.filtres
+{
+    width: 100%;
+    font-size: 1.5em;
+    justify-content: space-between;
+}
+.nbre_logments
+{
+    width: 60%;
+    justify-content: flex-start;
+    font-size: 1.3em;
+}
+section#hosting
+{
+    flex-direction: column;
+    width: 100%;
+}
+aside.hostingpopular
+{
+    width: 95%;
+    align-self: center;
+}
+.listepopular
+{
+    flex-direction: row;
+}
+.hebergementmarseille
+{
+    width: 95%;
+    order: 2;
+    margin: inherit;
+    align-self: center;
+}
+}
 
 /* VERSION IPHONE */
 
@@ -745,50 +803,5 @@ footer
 {
     width: 100%;
     margin-left: 6px;
-}
-}
-
-/* VERSION TABLETTE */
-
-@media all and (max-device-width: 1024px)
-{
-.header
-{
-    width: 95%;
-}
-.accroche
-{
-    font-size: 1.5em;
-}
-.filtres
-{
-    width: 100%;
-    font-size: 1.5em;
-    justify-content: space-between;
-}
-.nbre_logments
-{
-    width: 60%;
-    justify-content: flex-start;
-    font-size: 1.3em;
-}
-section#hosting
-{
-    flex-direction: column;
-    width: 100%;
-}
-aside.hostingpopular
-{
-    width: 100%;
-}
-.listepopular
-{
-    flex-direction: row;
-}
-.hebergementmarseille
-{
-    width: 100%;
-    order: 2;
-    margin: inherit;
 }
 }
