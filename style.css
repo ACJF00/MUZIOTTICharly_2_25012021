@@ -473,6 +473,24 @@ a.nav
 .search_form
 {
     width: 100%;
+    justify-content: center;
+}
+span.icone_search
+{
+    width: 5%;
+    height: 80%;
+}
+input#Rechercher
+{
+    width: 20%;
+    height: 80%;
+    font-size: 1.3em;
+}
+label
+{
+    width: 15%;
+    height: 80%;
+    font-size: 1.4em;
 }
 .filtres
 {
