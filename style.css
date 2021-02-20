@@ -525,6 +525,10 @@ aside.hostingpopular
     margin: inherit;
     align-self: center;
 }
+a.afficher_plus
+{
+    font-size: 1.3em;
+}
 }
 
 /* VERSION IPHONE */
