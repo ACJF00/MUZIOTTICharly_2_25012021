@@ -5,7 +5,7 @@ style.css
 Par Charly MUZIOTTI
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@290;351;402;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@290;351;402;500;600;700&display=swap') ;
 
 body
      {
@@ -78,7 +78,7 @@ span.icone_search {
     border: solid;
     border-width: thin;
     border-right: none;
-    border-color: #F2F2F2;
+    border-color: transparent;
 }
 .search_form {
     display: flex;
@@ -130,7 +130,6 @@ label {
 .filtres {
     display: flex;
     align-items: center;
-    justify-content: spa;
     width: 75%;
 }
 span {
@@ -145,7 +144,6 @@ span.sousaccroche {
 }
 .boutons_filtre_enfant {
     border: solid;
-    border: 3%;
     border-width: 3px;
     border-color: #F2F2F2;
     border-radius: 20px;
@@ -189,23 +187,6 @@ p#nbre_logement {
 i.fas.fa-info-circle {
     color: #0065FC;
 }
-.accroche {
-    margin-block: 1%;
-}
-
-/* FILTERS */
-
-.filtres {
-    margin-block: 2%;
-}
-
-/* HOSTING */
-
-section#hosting {
-    padding-block: 2%;
-    margin-block: 2%;
-}
-
     /* HEBERGEMENTS MARSEILLE */
 h2#hosting_mrs 
 {
@@ -392,9 +373,6 @@ img.img_activitiesimg {
     background-repeat: no-repeat;
     border-radius: 10px 10px 0px 0px;
 }
-.activities {
-    margin-block: 2%;
-}
 .txt_activities {
     width: 100%;
 }
@@ -452,7 +430,7 @@ ul {
 
 /* VERSION TABLETTE */
 
-@media all and (min-width: 480px) and (max-device-width: 1024px)
+@media all and (min-width: 480px) and (max-width: 1024px)
 {
 .header
 {
@@ -533,7 +511,7 @@ a.afficher_plus
 
 /* VERSION IPHONE */
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
 div.header
 {
@@ -742,7 +720,6 @@ p.price_hosting
 }
 div.stars
 {
-    size: 1em;
     margin-left: 9px;
 }
 div.info_popular
