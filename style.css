@@ -126,6 +126,13 @@ label {
     height: 35px;
     align-items: center;
 }
+.boutons_filtre_enfant:hover {
+    padding: 3px;
+    box-shadow: gray;
+    text-shadow: black;
+    border-color: skyblue;
+    background-color: skyblue;
+}
 
 .filtres {
     display: flex;
@@ -203,13 +210,54 @@ h2#hosting_mrs
     margin-left: 20px;
     margin-right: 30px;
 }
-
+article#article1 {
+    order: 1;
+}
+article#article2 {
+    order: 2;
+}
+article#article3 {
+    order: 3;
+}
+article#article4 {
+    order: 1;
+}
+article#article5 {
+    order: 2;
+}
+article#article6 {
+    order: 6;
+}
 .img_article {
     width: 100%;
     height: 120px;
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
     background-position: center;
+}
+div#cannebiere
+{
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+div#hotelport
+{
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+div#mouettes
+{
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+div#hotelmer
+{
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+div#panier
+{
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+div#amina
+{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
 }
 article.hostingarticle {
     width: 25%;
@@ -254,6 +302,11 @@ aside.hostingpopular {
     padding: 10px;
     border-radius: 10px;
 }
+a.linkpopular {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 .accroche_popular {
     display: flex;
     align-items: baseline;
@@ -266,6 +319,18 @@ aside.hostingpopular {
     border-radius: 10px 0px 0px 10px;
     background-position: center;
 }
+div#soleilmatin
+{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
+div#coeureau
+{
+    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+}
+div#bleublanc
+{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+}
 .txt_popular {
     width: 58%;
     display: flex;
@@ -275,7 +340,6 @@ aside.hostingpopular {
 
 article.hostingpopular {
     width: 85%;
-    height: 40%;
     display: flex;
     margin: 20px;
     padding: 6px;
@@ -345,9 +409,37 @@ img.imgpopularimg {
     background-size: cover;
     border-radius: 10px 10px 0px 0px;
 }
-
-article.activityarticle_gd {
+div#vieuxport
+{
+    background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+}
+div#pomegues
+{
+    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+}
+div#frioul
+{
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);;
+}
+div#calanques
+{
+    background-image:  url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+}
+div#lagarde
+{
+    background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+}
+div#longchamp
+{
+    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+}
+a.link_activity_gd 
+{
+    display: flex;
     width: 20%;
+}
+article.activityarticle_gd {
+    width: 100%;
     padding: 10px;
     box-shadow: 1px 3px 3px grey;
     border-radius: 10px;
@@ -359,6 +451,9 @@ article.activityarticle_gd {
     width: 100%;
     max-height: 600px;
     align-content: space-around;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 img.img_activitiesimg {
@@ -375,11 +470,6 @@ img.img_activitiesimg {
 }
 .txt_activities {
     width: 100%;
-}
-
-.liste_activities {
-    display: flex;
-    justify-content: space-around;
 }
 .activity_small {
     width: 20%;
@@ -704,6 +794,11 @@ article.hostingpopular
 width: 90%;
 height: auto;
 }
+a.link_activity_gd {
+    width: 100%;
+    /* padding: unset; */
+    justify-content: center;
+}
 div.img_popular
 {
     width: 150px;
@@ -743,7 +838,6 @@ p.txt_activity_enfant
 article.activityarticle_gd
 {
     width: 95%;
-    padding: unset;
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -751,7 +845,7 @@ article.activityarticle_gd
 article.activityarticle
 {
     width: 95%;
-    padding: unset;
+    margin: unset;
 }
 div.activity_small
 {
