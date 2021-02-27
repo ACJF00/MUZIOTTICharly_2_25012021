@@ -1,7 +1,6 @@
 /*
 style.css
 ---------
- 
 Par Charly MUZIOTTI
 */
 
@@ -128,7 +127,6 @@ label {
 }
 .boutons_filtre_enfant:hover {
     padding: 3px;
-    border-color: skyblue;
     background-color: skyblue;
 }
 
