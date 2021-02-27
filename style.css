@@ -522,6 +522,10 @@ ul {
 
 @media all and (min-width: 480px) and (max-width: 1024px)
 {
+body
+{
+    width: 100%;
+}
 .header
 {
     width: 80%;
@@ -538,10 +542,15 @@ a.nav
 {
     font-size: 1.5em;
 }
+span.sousaccroche
+{
+    font-size: 1.2em;
+}
 .search_form
 {
     width: 100%;
     justify-content: center;
+    margin: 20px;
 }
 span.icone_search
 {
@@ -581,6 +590,7 @@ aside.hostingpopular
 {
     width: 95%;
     align-self: center;
+    margin-bottom: 10px;
 }
 .listepopular
 {
@@ -596,6 +606,12 @@ aside.hostingpopular
 a.afficher_plus
 {
     font-size: 1.3em;
+}
+.footer_parent
+{
+    font-size: 1.1em;
+    width: 100%;
+    text-align: center;
 }
 }
 
